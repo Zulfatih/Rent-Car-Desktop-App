@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" language="groovy" pageWidth="300" pageHeight="400" columnWidth="260" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b3d649f6-fde0-48a6-9645-24079361d839">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="dkode" class="java.lang.String"/>
+	<parameter name="dnama" class="java.lang.String"/>
+	<parameter name="dpengembalian" class="java.lang.String"/>
+	<parameter name="ddikembalikan" class="java.lang.String"/>
+	<parameter name="dmobil" class="java.lang.String"/>
+	<parameter name="dsewa" class="java.lang.String"/>
+	<parameter name="dterlambat" class="java.lang.String"/>
+	<parameter name="dtotal" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="42" y="18" width="174" height="33" uuid="153d7240-ac4a-42d6-b12c-eb1068808ec6"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Receipt Denda]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="175" splitType="Stretch">
+			<textField>
+				<reportElement x="160" y="0" width="100" height="20" uuid="6d925fce-50c6-44cb-861b-bc9c92403b66"/>
+				<textFieldExpression><![CDATA[$P{dkode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="20" width="100" height="20" uuid="5e11b66f-c7c0-40a4-ba5d-8eb12b301fe3"/>
+				<textFieldExpression><![CDATA[$P{dnama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="40" width="100" height="20" uuid="a871b797-911f-47f0-8146-e4c20e2ba617"/>
+				<textFieldExpression><![CDATA[$P{dpengembalian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="60" width="100" height="20" uuid="a7120846-4535-4422-b6de-11e20b7ca4a4"/>
+				<textFieldExpression><![CDATA[$P{ddikembalikan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="80" width="100" height="20" uuid="42a877cc-e0b0-4572-a76c-2a0c78f437a2"/>
+				<textFieldExpression><![CDATA[$P{dmobil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="100" width="100" height="20" uuid="c4735f13-2215-41c4-b991-f79745e52001"/>
+				<textFieldExpression><![CDATA[$P{dsewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="120" width="100" height="20" uuid="8d2715ee-ee2d-4dbd-b4ee-a70aa5d2843b"/>
+				<textFieldExpression><![CDATA[$P{dterlambat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="140" width="100" height="20" uuid="0ad7483d-09ad-41f0-ae06-1107e758fd15"/>
+				<textFieldExpression><![CDATA[$P{dtotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="6bf07932-2ad9-40cf-9410-0f7d0c355329"/>
+				<text><![CDATA[Kode Transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="6e46953f-f06c-4c3a-8129-31c5d8984ab6"/>
+				<text><![CDATA[Nama Penyewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="100" height="20" uuid="d96cf3ad-8c5e-43b3-9568-4092d2bad375"/>
+				<text><![CDATA[Tgl pengembalian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="100" height="20" uuid="10ec5cda-0554-4154-8dcf-d63ccd87f2f9"/>
+				<text><![CDATA[Tgl Dikembalikan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="100" height="20" uuid="27a21560-fb1f-49a0-8925-570d23c56496"/>
+				<text><![CDATA[Mobil Disewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="100" height="20" uuid="65e32891-7792-4a55-a619-cdd0a37db004"/>
+				<text><![CDATA[Denda Perhari]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="120" width="100" height="20" uuid="13cc2fc2-a91b-450d-808d-f202354b1f6b"/>
+				<text><![CDATA[Keterlambatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="140" width="100" height="20" uuid="fd0dc96d-9395-45d1-b53c-2025e03629fa"/>
+				<text><![CDATA[Total Denda]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

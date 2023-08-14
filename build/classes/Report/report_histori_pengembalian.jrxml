@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1357ed77-d92e-4fb9-bc45-3d3316b08647">
+	<property name="ireport.zoom" value="1.2100000000000002"/>
+	<property name="ireport.x" value="191"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tbl_pengembalian]]>
+	</queryString>
+	<field name="kode_transaksi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_penyewa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jadwal_pengambilan" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jadwal_pengembalian" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_pengembalian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mobil_disewa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_hari_sewa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="279" y="19" width="244" height="37" uuid="68d8aa3d-e4e8-4ab9-ade6-9b452ad1edd2"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOA IBU RENT CAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="355" y="45" width="100" height="20" uuid="a550fae5-9123-409d-a194-06423359d6e6"/>
+				<text><![CDATA[Jakarta, Indonesia]]></text>
+			</staticText>
+			<image>
+				<reportElement x="105" y="0" width="78" height="78" uuid="a929a4ba-9289-42dc-a72f-f9e433dcd5b4"/>
+				<imageExpression><![CDATA["C:\\Users\\zulfa\\OneDrive\\Documents\\Muhammad Zulfatih\\data kuliah\\R6T\\Pemrograman Visual\\Rent_Car\\src\\Assets\\rent-car.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="75" splitType="Stretch">
+			<staticText>
+				<reportElement x="233" y="17" width="340" height="37" uuid="00ee6f14-d247-4bc0-9f26-9c9060e3b0aa"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Report History Pengembalian]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="68" width="802" height="1" uuid="99d4d810-7333-4292-a779-17a9673d5d8c"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="a2937062-678b-4a6d-ae3f-d436344eb7dc"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="5" width="75" height="20" uuid="5b8d3683-8078-4ee2-87eb-8deaec18bca3"/>
+				<text><![CDATA[kode_transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="5" width="100" height="20" uuid="ba789d25-c0b8-4936-8e4b-fd5ac79f53eb"/>
+				<text><![CDATA[nama_penyewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="5" width="100" height="20" uuid="eb17232c-03d0-4a5f-8553-1f84068e6698"/>
+				<text><![CDATA[jadwal_pengambilan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="5" width="113" height="20" uuid="cb6966cb-c132-4f17-97bd-fadf57658ed1"/>
+				<text><![CDATA[jadwal_pengembalian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="5" width="100" height="20" uuid="5e819807-96d5-4572-84cf-4f0c58406af3"/>
+				<text><![CDATA[tgl_pengembalian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="523" y="5" width="100" height="20" uuid="9744d382-9c93-40e8-a2de-2cb5b8b2cd2d"/>
+				<text><![CDATA[mobil_disewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="623" y="5" width="78" height="20" uuid="7dfffb9e-98a0-4ee9-ac4c-f128bac301ce"/>
+				<text><![CDATA[total_hari_sewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="712" y="5" width="90" height="20" uuid="3fcd4ff9-7dfc-46f9-b60d-70d47e5a9ec3"/>
+				<text><![CDATA[status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="5" y="0" width="75" height="20" uuid="c6ed36e4-d212-4bb8-861a-ea9cf9cbf565"/>
+				<textFieldExpression><![CDATA[$F{kode_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="83" y="0" width="100" height="20" uuid="da6edf92-d14d-4940-bfc8-183cdca9c993"/>
+				<textFieldExpression><![CDATA[$F{nama_penyewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="183" y="2" width="100" height="20" uuid="8c9c8f8d-b6d7-4cff-b71f-8c0e80cc4777"/>
+				<textFieldExpression><![CDATA[$F{jadwal_pengambilan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="2" width="113" height="20" uuid="71a4cfbd-87c7-4086-a77c-f81b699f8518"/>
+				<textFieldExpression><![CDATA[$F{jadwal_pengembalian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="418" y="2" width="100" height="20" uuid="efa84855-642e-469d-8ce8-8ae1e3ec34de"/>
+				<textFieldExpression><![CDATA[$F{tgl_pengembalian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="523" y="2" width="100" height="20" uuid="82e51eb7-b718-4b71-af31-edaf842ab960"/>
+				<textFieldExpression><![CDATA[$F{mobil_disewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="623" y="2" width="78" height="20" uuid="a55203de-011a-42ce-a2d2-3f87074895bd"/>
+				<textFieldExpression><![CDATA[$F{total_hari_sewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="712" y="2" width="90" height="20" uuid="13ef9def-20fd-4a3e-843e-dbdb0f715b13"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

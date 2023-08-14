@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0db889c0-66ff-4a1a-bddf-c63f1d39a490">
+	<property name="ireport.zoom" value="1.0000000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tbl_denda;]]>
+	</queryString>
+	<field name="kode_transaksi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_penyewa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_pengembalian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_dikembalikan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mobil_disewa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="denda_perhari" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="keterlambatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_denda" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="86" splitType="Stretch">
+			<staticText>
+				<reportElement x="295" y="25" width="244" height="37" uuid="ecdb6f4c-c025-4c3d-9647-5e6ef2cfc9ef"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOA IBU RENT CAR]]></text>
+			</staticText>
+			<image>
+				<reportElement x="99" y="-2" width="82" height="81" uuid="08251637-25f7-4d2a-8d3b-b9f0b1976641"/>
+				<imageExpression><![CDATA["C:\\Users\\zulfa\\OneDrive\\Documents\\Muhammad Zulfatih\\data kuliah\\R6T\\Pemrograman Visual\\Rent_Car\\src\\Assets\\rent-car.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="371" y="51" width="100" height="20" uuid="0a85ca62-b1ad-4a6e-9471-875f4075c798"/>
+				<text><![CDATA[Jakarta, Indonesia]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="75" splitType="Stretch">
+			<staticText>
+				<reportElement x="293" y="14" width="272" height="37" uuid="5e8d52ea-c7f9-4e01-81f9-d8715940e9ee"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Report History Denda]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="ce970700-fde3-417b-83bb-4a558502164a"/>
+			</line>
+			<line>
+				<reportElement x="0" y="65" width="802" height="1" uuid="da3047f6-7680-45de-8e59-fe29633d9c98"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="41" y="0" width="69" height="20" uuid="c68404df-746d-4c9d-ad9e-ae4c30c3b8c4"/>
+				<text><![CDATA[kode_transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="508" y="0" width="80" height="20" uuid="a6c89e7f-ebb7-4a9c-aed4-7b0237d90279"/>
+				<text><![CDATA[denda_perhari]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="314" y="0" width="76" height="20" uuid="126cd6e8-7820-442d-b3b0-046e8c37defd"/>
+				<text><![CDATA[tgl_dikembalikan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="0" width="84" height="20" uuid="276814bf-142d-4c75-90e1-0fb473eca28f"/>
+				<text><![CDATA[tgl_pengembalian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="0" width="95" height="20" uuid="51c833e3-a828-4903-b8de-7a8a9baa5a48"/>
+				<text><![CDATA[mobil_disewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="118" y="0" width="100" height="20" uuid="e350c49f-716e-49b7-8e61-d5197cc95789"/>
+				<text><![CDATA[nama_penyewa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="598" y="0" width="67" height="20" uuid="9784918f-81bb-4cdc-9b15-ab589250f83f"/>
+				<text><![CDATA[keterlambatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="675" y="0" width="65" height="20" uuid="537a7e25-fc49-4c3b-8144-d670234a6306"/>
+				<text><![CDATA[total_denda]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="41" y="0" width="69" height="20" uuid="bb11d60c-0d24-4eaf-9831-7868e86758cd"/>
+				<textFieldExpression><![CDATA[$F{kode_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="0" width="100" height="20" uuid="3f8cc60b-6ace-4011-8aa3-bf7c86933199"/>
+				<textFieldExpression><![CDATA[$F{nama_penyewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="314" y="0" width="76" height="20" uuid="fc3b7b17-6add-47c7-8a7c-fd3c9cf8147f"/>
+				<textFieldExpression><![CDATA[$F{tgl_dikembalikan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="226" y="0" width="84" height="20" uuid="6eff3223-8a56-4f92-a01d-2bc03feb423b"/>
+				<textFieldExpression><![CDATA[$F{tgl_pengembalian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="0" width="95" height="20" uuid="836e3720-33db-444f-81e5-0132812a4570"/>
+				<textFieldExpression><![CDATA[$F{mobil_disewa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="508" y="0" width="80" height="20" uuid="c9ab84dd-1b34-4914-88fe-e8ec53edf569"/>
+				<textFieldExpression><![CDATA[$F{denda_perhari}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="598" y="0" width="67" height="20" uuid="4bfad148-a4ba-4757-ae91-fa108d8f8d54"/>
+				<textFieldExpression><![CDATA[$F{keterlambatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="675" y="0" width="65" height="20" uuid="0edcbd41-e21f-4715-a663-6ad0722d2d05"/>
+				<textFieldExpression><![CDATA[$F{total_denda}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
